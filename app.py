@@ -16,7 +16,7 @@ app = Flask(__name__)
 app.secret_key = os.urandom(24)
 
 
-# === index page
+# === index page of bart
 @app.route('/', methods=['GET', 'POST'])
 def index():
     if request.method == 'POST':
